@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Memoria-compartida by p8queen</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Memoria-compartida</h1>
+        <h2>Memoria Compartida en C, Linux</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/p8queen/Memoria-Compartida/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/p8queen/Memoria-Compartida/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/p8queen/Memoria-Compartida" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>Memoria Simple y con Semáforos</h1>
+
+<h3>Memoria Simple</h3>
+
+<p>En mem-productor.c crea una memoria para un integer.
+carga 100 litros en memoria compartida 
+Correr primero mem-productor.c y luego mem-lector.c
+mem-lector resta 30 litros a la memoria compartida o 
+toma todo, si hay menos de 30 litros. </p>
+
+<h3>Memoria carpeta semaforos</h3>
+
+<p>En mem-productor.c crea un semáforo contador, con 2 accesos. 
+En mem-lector.c hay semáforo binario, para evitar que dos binarios, 
+acceden al mismo tiempo a la memoria compartida. </p>
+
+<h3>Tips</h3>
+
+<h4>Ver semáforo y Memoria</h4>
+
+<ul>
+<li>$ ipcs -s</li>
+<li>$ ipcs -m</li>
+</ul><h4>Borrar semáforo y Memoria</h4>
+
+<ul>
+<li>$ ipcrm -s id-semaforo</li>
+<li>$ ipcrm -m id-memoria</li>
+</ul>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
